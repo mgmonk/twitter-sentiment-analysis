@@ -8,7 +8,7 @@ auth.set_access_token(key, secret)
 
 api = tweepy.API(auth)
 
-tweets = api.search("game of thrones")
+tweets = api.search("game of thrones", lang="en")
 
 output = []
 for tweet in tweets:
